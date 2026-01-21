@@ -1,0 +1,41 @@
+/* src/components/pages/Loading.css */
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #ffe6f0, #fff0f5);
+}
+
+.spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #ff69b4;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 30px;
+}
+
+.loading-brand {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ff3385;
+  letter-spacing: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 2px 2px 6px rgba(255, 0, 128, 0.3);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}

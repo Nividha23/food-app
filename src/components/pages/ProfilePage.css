@@ -1,0 +1,135 @@
+.profile-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.profile-picture {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ec4899;
+  margin: 0.25rem 0;
+}
+
+.account-date {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.profile-info {
+  text-align: left;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.profile-info div {
+  margin-bottom: 0.25rem;
+}
+
+.profile-info span {
+  font-weight: 600;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.profile-actions button {
+  width: 70%;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: #ec4899;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-actions button:hover {
+  background-color: #db2777;
+}
+
+.profile-actions .order {
+  background-color: #6366f1;
+}
+
+.profile-actions .order:hover {
+  background-color: #4f46e5;
+}
+
+.profile-actions .logout {
+  background-color: #9ca3af;
+}
+
+.profile-actions .logout:hover {
+  background-color: #6b7280;
+}
+
+.profile-info input,
+.profile-info textarea {
+  width: 90%;
+  padding: 6px 10px;
+  margin: 5px 0;
+  border: 1px solid #ec4899;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.profile-info textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.profile-info > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.profile-info > div span {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.profile-info button {
+  width: 90%;
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ec4899;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover {
+  background-color: #db2777;
+}

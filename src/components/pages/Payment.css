@@ -1,0 +1,109 @@
+/* Payment.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffeef5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffeef5;
+  padding-top: 60px; /* Leave space for top-left button */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* ⬅️ Top-left corner */
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Centered heading */
+.center-heading {
+  text-align: center;
+  color: #c2185b;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* Centered column of options */
+.payment-options-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffe3ec;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  justify-content: center;
+  text-align: center;
+}
+
+.payment-option img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.payment-option span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c2185b;
+}
+
+.payment-option:hover {
+  transform: scale(1.05);
+  background-color: #fdd6e1;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #e0338b;
+}

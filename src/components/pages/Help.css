@@ -1,0 +1,167 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.help-header {
+  background-color: #ffe6ec;
+  padding: 20px;
+  text-align: center;
+}
+
+.help-header h1 {
+  margin-bottom: 10px;
+  color: #d6336c;
+}
+
+.help-main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.help-topics h2,
+.help-faq h2,
+.contact-section h2,
+.submit-issue h2 {
+  color: #d6336c;
+  margin-bottom: 10px;
+}
+
+.faq {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  background: #ffe6ec;
+  color: #d6336c;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.faq-answer {
+  display: none;
+  background: #fff8f4;
+  padding: 10px;
+  border-left: 4px solid #d6336c;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+.contact-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-box a {
+  text-decoration: none;
+  color: white;
+  background-color: #d6336c;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.contact-box a:hover {
+  background-color: white;
+  color: #d6336c;
+}
+
+.submit-issue {
+  margin-top: 40px;
+}
+
+.submit-issue form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-issue input,
+.submit-issue textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.submit-issue button {
+  background-color: #d6336c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-issue button:hover {
+  background-color: white;
+  color: #d6336c;
+}
+
+.accordion-item {
+  background-color: #ffe6ef;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-question {
+  padding: 18px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-left: 5px solid #d6336c;
+}
+
+.accordion-answer {
+  padding: 15px 20px;
+  display: none;
+  border-top: 1px solid #f5c3d4;
+  background-color: #fff0f6;
+  color: #333;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.accordion-item.active .accordion-answer {
+  display: block;
+}
+
+.accordion-item.active .accordion-question {
+  background-color: #fdd6e6;
+}
+
+.back-button-container {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #d6336c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: #d6336c;
+}

@@ -1,0 +1,328 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-page {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cart-page h2 {
+  color: #c2185b;
+  font-size: 26px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  background: #ffe3ec;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-item img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  margin: 0 0 8px;
+  color: #c2185b;
+}
+
+.item-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-controls button {
+  padding: 4px 10px;
+  border: 1px solid #c2185b;
+  color: #c2185b;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-controls button:hover {
+  background: #f8bbd0;
+}
+
+.subtotal-section {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.subtotal-section p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtotal-section button {
+  background: #c2185b;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+}
+
+.subtotal-section button:hover {
+  color: #ad1457;
+  background: white;
+}
+
+.cancel-btn {
+  background: #e53935 !important;
+}
+
+.cancel-btn:hover{
+  background: white;
+  color: #e53935;
+
+}
+
+.track-btn {
+  background: #1e88e5 !important;
+}
+
+/* REMOVE BUTTON — updated */
+.cart-item button,
+.remove-btn {
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+  min-width: 80px;
+}
+
+.cart-item button:hover,
+.remove-btn:hover {
+  background: white;
+  color: #ad1457;
+}
+
+/* COUPON APPLY BUTTON — updated */
+.coupon-section {
+  margin-top: 20px;
+}
+
+.coupon-section input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.coupon-section button {
+  background-color: #c2185b;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+  min-width: 80px;
+}
+
+.coupon-section button:hover {
+  background-color: #ad1457;
+}
+
+/* Popup message styling */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#popup-message {
+  background-color: #fff;
+  color: #333;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.9); }
+  10% { opacity: 1; transform: scale(1); }
+  90% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.9); }
+}
+
+.quantity-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.quantity-buttons button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* You May Also Like Section */
+.suggestion-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.suggestion-card {
+  background: #ffe3ec;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.suggestion-card h4 {
+  font-size: 16px;
+  color: #c2185b;
+  margin: 10px 0 6px;
+}
+
+.suggestion-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.suggestion-card button {
+  margin-top: 8px;
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.suggestion-card button:hover {
+  background-color: white;
+  color: #ad1457;
+}
+
+/* Make Remove button compact like Checkout */
+.cart-item .remove-btn {
+  background: #c2185b;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+}
+
+.cart-item .remove-btn:hover {
+  background: white;
+  color: #ad1457;
+}
+/* Make Apply button compact like Checkout */
+.coupon-section button {
+  background: #c2185b;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+}
+
+.coupon-section button:hover {
+  background: white;
+  color: #ad1457;
+}
+
+.back-button-container {
+  margin: 20px 0;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #d6336c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: #d6336c;
+}

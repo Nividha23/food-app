@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffd0dd; /* removed yellow completely */
+  margin: 0;
+  padding: 0;
+}
+
+.address-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd0dd;
+  padding: 20px;
+}
+
+.address-container {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* back button moved to top-left of container */
+.address-back-btn {
+  background-color: #ff6392;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.address-back-btn:hover {
+  background-color: white;
+  color: #e91e63;
+}
+
+.address-title {
+  color: #c2185b;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.address-form label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.address-form input,
+.address-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.address-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.address-row {
+  display: flex;
+  gap: 10px;
+}
+
+.address-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.address-continue-btn {
+  width: fit-content;
+  align-self: center;
+  background-color: #ff6392;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.address-continue-btn:hover {
+  background-color: white;
+  color: #e91e63;
+}

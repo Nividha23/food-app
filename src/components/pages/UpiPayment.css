@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffeef5;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffeef5;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  max-width: none;
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #d63384;
+  margin-bottom: 20px;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.upi-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: white;
+  border: 2px solid #ffb3cc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.upi-icon:hover {
+  transform: scale(1.1);
+}
+
+.upi-entry {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ff99c2;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.or-text {
+  margin: 15px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.qr-section {
+  margin-top: 20px;
+}
+
+.qr-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.apps img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.apps img:hover {
+  transform: scale(1.1);
+}
+
+.pay-btn {
+  display: inline-block;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 20px;
+}
+
+.pay-btn:hover {
+  background-color: #c2185b;
+}
+
+/* Container to center the button */
+.pay-btn-wrapper {
+  text-align: center;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4da6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  width: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.back-home-btn:hover {
+  background-color: white;
+  color: #e91e63;
+}
